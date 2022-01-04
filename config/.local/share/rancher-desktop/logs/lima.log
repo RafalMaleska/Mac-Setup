@@ -1,0 +1,11 @@
+time="2021-10-14T22:14:24+02:00" level=info msg="Using the existing instance \"0\""
+time="2021-10-14T22:14:24+02:00" level=fatal msg="failed to run [qemu-img create -f qcow2 /home/rmanhart/.local/share/rancher-desktop/lima/0/diffdisk 107374182400]: \"\": exec: \"qemu-img\": executable file not found in $PATH"
++ limactl start --tty=false 0
+Error: /home/rmanhart/Desktop/rancher-desktop-0.6.0/resources/resources/linux/lima/bin/limactl exited with code 1
+    at ChildProcess.<anonymous> (/home/rmanhart/Desktop/rancher-desktop-0.6.0/resources/app.asar/dist/app/background.js:1:7901)
+    at ChildProcess.emit (events.js:315:20)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:277:12)
+Error starting lima: Error: /home/rmanhart/Desktop/rancher-desktop-0.6.0/resources/resources/linux/lima/bin/limactl exited with code 1
+    at ChildProcess.<anonymous> (/home/rmanhart/Desktop/rancher-desktop-0.6.0/resources/app.asar/dist/app/background.js:1:7901)
+    at ChildProcess.emit (events.js:315:20)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:277:12)

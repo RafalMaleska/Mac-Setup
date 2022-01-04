@@ -1,0 +1,76 @@
+ssh:
+  loadDotSSHPubKeys: false
+  localPort: 35181
+firmware:
+  legacyBIOS: true
+containerd:
+  system: false
+  user: false
+provision:
+  - mode: system
+    script: |
+      #!/bin/sh
+      hostname lima-rancher-desktop
+  - mode: system
+    script: |
+      #!/bin/sh
+      set -o errexit -o nounset -o xtrace
+      # During boot is the only safe time to delete old k3s versions.
+      rm -rf /var/lib/rancher/k3s/data
+      # Delete all tmp files older than 3 days.
+      find /tmp -depth -mtime +3 -delete
+  - mode: system
+    script: |
+      #!/bin/sh
+      set -o errexit -o nounset -o xtrace
+      mkdir -p /bootfs
+      mount --bind / /bootfs
+      rm /bootfs/etc/machine-id
+      cp -pruT /bootfs/etc /etc
+      cp -pruT /bootfs/usr/local /usr/local
+      umount /bootfs
+      rmdir /bootfs
+      # The new Alpine ISO makes this change, but it gets lost because the
+      # lima boot scripts also modify sshd_config.
+      sed -i 's/#UsePAM no/UsePAM yes/g' /etc/ssh/sshd_config
+  - mode: system
+    script: |
+      #!/bin/sh
+      set -o errexit -o nounset -o xtrace
+      for dir in / /etc /tmp /var/lib; do
+        mount --make-shared "${dir}"
+      done
+  - mode: system
+    script: >
+      #!/bin/sh
+
+      # Move logrotate to hourly, because busybox crond only handles time jumps up
+
+      # to one hour; this ensures that if the machine is suspended over long
+
+      # periods, things will still happen often enough.  This is idempotent.
+
+      mv -n /etc/periodic/daily/logrotate /etc/periodic/hourly/
+
+      rc-update add crond default
+
+      rc-service crond start
+portForwards:
+  - guestPortRange:
+      - 1
+      - 65535
+    hostIP: 0.0.0.0
+images:
+  - location: /home/rmanhart/Desktop/rancher-desktop-0.6.0/resources/resources/linux/alpine-lima-v0.1.8-rd-3.13.5.iso
+    arch: x86_64
+cpus: 2
+memory: 5368709120
+mounts:
+  - location: /home/rmanhart/.cache/rancher-desktop/k3s
+    writable: false
+  - location: "~"
+    writable: true
+  - location: /tmp/rancher-desktop
+    writable: true
+k3s:
+  version: v1.21.5

@@ -1,0 +1,6 @@
+No paths migration available for platform linux
+Kubernetes was unable to start: Error: /home/rmanhart/Desktop/rancher-desktop-0.6.0/resources/resources/linux/lima/bin/limactl exited with code 1
+    at ChildProcess.<anonymous> (/home/rmanhart/Desktop/rancher-desktop-0.6.0/resources/app.asar/dist/app/background.js:1:7901)
+    at ChildProcess.emit (events.js:315:20)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:277:12)
+2: Child exited cleanly.

@@ -1,0 +1,839 @@
+[ 37864.455] _XSERVTransSocketUNIXCreateListener: ...SocketCreateListener() failed
+[ 37864.455] _XSERVTransMakeAllCOTSServerListeners: server already running
+[ 37864.455] (--) Log file renamed from "/home/rmanhart/.local/share/xorg/Xorg.pid-591369.log" to "/home/rmanhart/.local/share/xorg/Xorg.1.log"
+[ 37864.456] 
+X.Org X Server 1.20.9
+X Protocol Version 11, Revision 0
+[ 37864.456] Build Operating System: Linux 4.15.0-118-generic x86_64 Ubuntu
+[ 37864.456] Current Operating System: Linux gorilla 5.8.0-29-generic #31-Ubuntu SMP Fri Nov 6 12:37:59 UTC 2020 x86_64
+[ 37864.456] Kernel command line: BOOT_IMAGE=/boot/vmlinuz-5.8.0-29-generic root=UUID=d952ed81-f286-4e87-962b-7209e0843a42 ro quiet splash
+[ 37864.456] Build Date: 07 October 2020  05:46:52AM
+[ 37864.456] xorg-server 2:1.20.9-2ubuntu1 (For technical support please see http://www.ubuntu.com/support) 
+[ 37864.456] Current version of pixman: 0.38.4
+[ 37864.456] 	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+[ 37864.456] Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+[ 37864.456] (==) Log file: "/home/rmanhart/.local/share/xorg/Xorg.1.log", Time: Thu Nov 26 16:17:08 2020
+[ 37864.456] (==) Using system config directory "/usr/share/X11/xorg.conf.d"
+[ 37864.456] (==) No Layout section.  Using the first Screen section.
+[ 37864.456] (==) No screen section available. Using defaults.
+[ 37864.456] (**) |-->Screen "Default Screen Section" (0)
+[ 37864.456] (**) |   |-->Monitor "<default monitor>"
+[ 37864.457] (==) No monitor specified for screen "Default Screen Section".
+	Using a default monitor configuration.
+[ 37864.457] (==) Automatically adding devices
+[ 37864.457] (==) Automatically enabling devices
+[ 37864.457] (==) Automatically adding GPU devices
+[ 37864.457] (==) Automatically binding GPU devices
+[ 37864.457] (==) Max clients allowed: 256, resource mask: 0x1fffff
+[ 37864.457] (WW) The directory "/usr/share/fonts/X11/cyrillic" does not exist.
+[ 37864.457] 	Entry deleted from font path.
+[ 37864.457] (WW) The directory "/usr/share/fonts/X11/100dpi/" does not exist.
+[ 37864.457] 	Entry deleted from font path.
+[ 37864.457] (WW) The directory "/usr/share/fonts/X11/75dpi/" does not exist.
+[ 37864.457] 	Entry deleted from font path.
+[ 37864.457] (WW) The directory "/usr/share/fonts/X11/100dpi" does not exist.
+[ 37864.457] 	Entry deleted from font path.
+[ 37864.457] (WW) The directory "/usr/share/fonts/X11/75dpi" does not exist.
+[ 37864.457] 	Entry deleted from font path.
+[ 37864.457] (==) FontPath set to:
+	/usr/share/fonts/X11/misc,
+	/usr/share/fonts/X11/Type1,
+	built-ins
+[ 37864.457] (==) ModulePath set to "/usr/lib/xorg/modules"
+[ 37864.457] (II) The server relies on udev to provide the list of input devices.
+	If no devices become available, reconfigure udev or disable AutoAddDevices.
+[ 37864.457] (II) Loader magic: 0x555cf7a71020
+[ 37864.457] (II) Module ABI versions:
+[ 37864.457] 	X.Org ANSI C Emulation: 0.4
+[ 37864.457] 	X.Org Video Driver: 24.1
+[ 37864.457] 	X.Org XInput driver : 24.1
+[ 37864.458] 	X.Org Server Extension : 10.0
+[ 37864.459] (++) using VT number 2
+
+[ 37864.461] (II) systemd-logind: took control of session /org/freedesktop/login1/session/_326
+[ 37864.463] (II) xfree86: Adding drm device (/dev/dri/card0)
+[ 37864.464] (II) systemd-logind: got fd for /dev/dri/card0 226:0 fd 15 paused 0
+[ 37864.466] (--) PCI:*(0@0:2:0) 15ad:0405:15ad:0405 rev 0, Mem @ 0xe0000000/33554432, 0xf0000000/2097152, I/O @ 0x0000d010/16, BIOS @ 0x????????/131072
+[ 37864.466] (II) LoadModule: "glx"
+[ 37864.466] (II) Loading /usr/lib/xorg/modules/extensions/libglx.so
+[ 37864.467] (II) Module glx: vendor="X.Org Foundation"
+[ 37864.467] 	compiled for 1.20.9, module version = 1.0.0
+[ 37864.467] 	ABI class: X.Org Server Extension, version 10.0
+[ 37864.467] (==) Matched vmware as autoconfigured driver 0
+[ 37864.467] (==) Matched modesetting as autoconfigured driver 1
+[ 37864.467] (==) Matched fbdev as autoconfigured driver 2
+[ 37864.468] (==) Matched vesa as autoconfigured driver 3
+[ 37864.468] (==) Assigned the driver to the xf86ConfigLayout
+[ 37864.468] (II) LoadModule: "vmware"
+[ 37864.468] (II) Loading /usr/lib/xorg/modules/drivers/vmware_drv.so
+[ 37864.484] (II) Module vmware: vendor="X.Org Foundation"
+[ 37864.484] 	compiled for 1.20.8, module version = 13.3.0
+[ 37864.484] 	Module class: X.Org Video Driver
+[ 37864.484] 	ABI class: X.Org Video Driver, version 24.1
+[ 37864.484] (II) LoadModule: "modesetting"
+[ 37864.484] (II) Loading /usr/lib/xorg/modules/drivers/modesetting_drv.so
+[ 37864.484] (II) Module modesetting: vendor="X.Org Foundation"
+[ 37864.484] 	compiled for 1.20.9, module version = 1.20.9
+[ 37864.484] 	Module class: X.Org Video Driver
+[ 37864.484] 	ABI class: X.Org Video Driver, version 24.1
+[ 37864.484] (II) LoadModule: "fbdev"
+[ 37864.484] (II) Loading /usr/lib/xorg/modules/drivers/fbdev_drv.so
+[ 37864.484] (II) Module fbdev: vendor="X.Org Foundation"
+[ 37864.484] 	compiled for 1.20.1, module version = 0.5.0
+[ 37864.484] 	Module class: X.Org Video Driver
+[ 37864.484] 	ABI class: X.Org Video Driver, version 24.0
+[ 37864.484] (II) LoadModule: "vesa"
+[ 37864.485] (II) Loading /usr/lib/xorg/modules/drivers/vesa_drv.so
+[ 37864.485] (II) Module vesa: vendor="X.Org Foundation"
+[ 37864.485] 	compiled for 1.20.8, module version = 2.5.0
+[ 37864.485] 	Module class: X.Org Video Driver
+[ 37864.485] 	ABI class: X.Org Video Driver, version 24.1
+[ 37864.485] (II) vmware: driver for VMware SVGA: vmware0405, vmware0710
+[ 37864.485] (II) modesetting: Driver for Modesetting Kernel Drivers: kms
+[ 37864.485] (II) FBDEV: driver for framebuffer: fbdev
+[ 37864.485] (II) VESA: driver for VESA chipsets: vesa
+[ 37864.485] xf86EnableIOPorts: failed to set IOPL for I/O (Operation not permitted)
+[ 37864.485] (WW) Falling back to old probe method for modesetting
+[ 37864.485] (WW) Falling back to old probe method for fbdev
+[ 37864.485] (II) Loading sub module "fbdevhw"
+[ 37864.486] (II) LoadModule: "fbdevhw"
+[ 37864.486] (II) Loading /usr/lib/xorg/modules/libfbdevhw.so
+[ 37864.486] (II) Module fbdevhw: vendor="X.Org Foundation"
+[ 37864.486] 	compiled for 1.20.9, module version = 0.0.2
+[ 37864.486] 	ABI class: X.Org Video Driver, version 24.1
+[ 37864.486] (EE) open /dev/fb0: Permission denied
+[ 37864.486] (WW) VGA arbiter: cannot open kernel arbiter, no multi-card support
+[ 37864.486] (II) vmware(0): Creating default Display subsection in Screen section
+	"Default Screen Section" for depth/fbbpp 24/32
+[ 37864.486] (--) vmware(0): DRM driver version is 2.18.0
+[ 37864.486] (==) vmware(0): Depth 24, (--) framebuffer bpp 32
+[ 37864.486] (==) vmware(0): RGB weight 888
+[ 37864.486] (==) vmware(0): Default visual is TrueColor
+[ 37864.486] (--) vmware(0): Min width 1, Max Width 8192.
+[ 37864.486] (--) vmware(0): Min height 1, Max Height 8192.
+[ 37864.486] (II) vmware(0): Output Virtual1 has no monitor section
+[ 37864.486] (II) vmware(0): Output Virtual2 has no monitor section
+[ 37864.486] (II) vmware(0): Output Virtual3 has no monitor section
+[ 37864.486] (II) vmware(0): Output Virtual4 has no monitor section
+[ 37864.486] (II) vmware(0): Output Virtual5 has no monitor section
+[ 37864.486] (II) vmware(0): Output Virtual6 has no monitor section
+[ 37864.486] (II) vmware(0): Output Virtual7 has no monitor section
+[ 37864.486] (II) vmware(0): Output Virtual8 has no monitor section
+[ 37864.486] (II) vmware(0): Printing probed modes for output Virtual1
+[ 37864.486] (II) vmware(0): Modeline "1920x975"x60.0  139.72  1920 1970 2020 2070  975 1025 1075 1125 -hsync +vsync (67.5 kHz eP)
+[ 37864.487] (II) vmware(0): Modeline "2560x1600"x60.0  348.50  2560 2752 3032 3504  1600 1603 1609 1658 -hsync +vsync (99.5 kHz e)
+[ 37864.487] (II) vmware(0): Modeline "1920x1440"x60.0  234.00  1920 2048 2256 2600  1440 1441 1444 1500 -hsync +vsync (90.0 kHz e)
+[ 37864.487] (II) vmware(0): Modeline "1856x1392"x60.0  218.25  1856 1952 2176 2528  1392 1393 1396 1439 -hsync +vsync (86.3 kHz e)
+[ 37864.487] (II) vmware(0): Modeline "1792x1344"x60.0  204.75  1792 1920 2120 2448  1344 1345 1348 1394 -hsync +vsync (83.6 kHz e)
+[ 37864.487] (II) vmware(0): Modeline "1920x1200"x59.9  193.25  1920 2056 2256 2592  1200 1203 1209 1245 -hsync +vsync (74.6 kHz e)
+[ 37864.487] (II) vmware(0): Modeline "1600x1200"x60.0  162.00  1600 1664 1856 2160  1200 1201 1204 1250 +hsync +vsync (75.0 kHz e)
+[ 37864.487] (II) vmware(0): Modeline "1680x1050"x60.0  146.25  1680 1784 1960 2240  1050 1053 1059 1089 -hsync +vsync (65.3 kHz e)
+[ 37864.487] (II) vmware(0): Modeline "1400x1050"x60.0  121.75  1400 1488 1632 1864  1050 1053 1057 1089 -hsync +vsync (65.3 kHz e)
+[ 37864.487] (II) vmware(0): Modeline "1280x1024"x60.0  108.00  1280 1328 1440 1688  1024 1025 1028 1066 +hsync +vsync (64.0 kHz e)
+[ 37864.487] (II) vmware(0): Modeline "1440x900"x59.9  106.50  1440 1520 1672 1904  900 903 909 934 -hsync +vsync (55.9 kHz e)
+[ 37864.487] (II) vmware(0): Modeline "1280x960"x60.0  108.00  1280 1376 1488 1800  960 961 964 1000 +hsync +vsync (60.0 kHz e)
+[ 37864.487] (II) vmware(0): Modeline "1360x768"x60.0   85.50  1360 1424 1536 1792  768 771 777 795 +hsync +vsync (47.7 kHz e)
+[ 37864.487] (II) vmware(0): Modeline "1280x800"x59.8   83.50  1280 1352 1480 1680  800 803 809 831 +hsync -vsync (49.7 kHz e)
+[ 37864.487] (II) vmware(0): Modeline "1152x864"x75.0  108.00  1152 1216 1344 1600  864 865 868 900 +hsync +vsync (67.5 kHz e)
+[ 37864.487] (II) vmware(0): Modeline "1280x768"x59.9   79.50  1280 1344 1472 1664  768 771 778 798 -hsync +vsync (47.8 kHz e)
+[ 37864.487] (II) vmware(0): Modeline "1024x768"x60.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz e)
+[ 37864.487] (II) vmware(0): Modeline "800x600"x60.3   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz e)
+[ 37864.487] (II) vmware(0): Modeline "640x480"x59.9   25.18  640 656 752 800  480 489 492 525 -hsync -vsync (31.5 kHz e)
+[ 37864.487] (II) vmware(0): EDID for output Virtual2
+[ 37864.487] (II) vmware(0): EDID for output Virtual3
+[ 37864.487] (II) vmware(0): EDID for output Virtual4
+[ 37864.487] (II) vmware(0): EDID for output Virtual5
+[ 37864.487] (II) vmware(0): EDID for output Virtual6
+[ 37864.487] (II) vmware(0): EDID for output Virtual7
+[ 37864.487] (II) vmware(0): EDID for output Virtual8
+[ 37864.487] (II) vmware(0): Output Virtual1 connected
+[ 37864.487] (II) vmware(0): Output Virtual2 disconnected
+[ 37864.487] (II) vmware(0): Output Virtual3 disconnected
+[ 37864.487] (II) vmware(0): Output Virtual4 disconnected
+[ 37864.487] (II) vmware(0): Output Virtual5 disconnected
+[ 37864.487] (II) vmware(0): Output Virtual6 disconnected
+[ 37864.487] (II) vmware(0): Output Virtual7 disconnected
+[ 37864.487] (II) vmware(0): Output Virtual8 disconnected
+[ 37864.487] (II) vmware(0): Using exact sizes for initial modes
+[ 37864.487] (II) vmware(0): Output Virtual1 using initial mode 1920x975 +0+0
+[ 37864.487] (==) vmware(0): DPI set to (96, 96)
+[ 37864.487] (==) vmware(0): Using gamma correction (1.0, 1.0, 1.0)
+[ 37864.487] (II) Loading sub module "fb"
+[ 37864.487] (II) LoadModule: "fb"
+[ 37864.487] (II) Loading /usr/lib/xorg/modules/libfb.so
+[ 37864.487] (II) Module fb: vendor="X.Org Foundation"
+[ 37864.487] 	compiled for 1.20.9, module version = 1.0.0
+[ 37864.487] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[ 37864.487] (II) Loading sub module "dri2"
+[ 37864.488] (II) LoadModule: "dri2"
+[ 37864.488] (II) Module "dri2" already built-in
+[ 37864.488] (II) Loading sub module "dri3"
+[ 37864.488] (II) LoadModule: "dri3"
+[ 37864.488] (II) Module "dri3" already built-in
+[ 37864.488] (II) UnloadModule: "modesetting"
+[ 37864.488] (II) Unloading modesetting
+[ 37864.488] (II) UnloadModule: "fbdev"
+[ 37864.488] (II) Unloading fbdev
+[ 37864.488] (II) UnloadSubModule: "fbdevhw"
+[ 37864.488] (II) Unloading fbdevhw
+[ 37864.488] (II) UnloadModule: "vesa"
+[ 37864.488] (II) Unloading vesa
+[ 37864.488] (II) vmware(0): Initialized VMWARE_CTRL extension version 0.2
+[ 37864.492] (WW) vmware(0): Failed to initialize Gallium3D Xa. No render acceleration available.
+[ 37864.492] (WW) vmware(0): Skipped initialization of direct rendering due to lack of render acceleration.
+[ 37864.492] (--) vmware(0): Render acceleration is disabled.
+[ 37864.492] (==) vmware(0): Rendercheck mode is disabled.
+[ 37864.492] (--) vmware(0): Direct rendering (DRI2 3D) is disabled.
+[ 37864.492] (--) vmware(0): Direct rendering (DRI3 3D) is disabled.
+[ 37864.492] (==) vmware(0): Backing store enabled
+[ 37864.492] (==) vmware(0): Silken mouse enabled
+[ 37864.493] (==) vmware(0): DPMS enabled
+[ 37864.493] (II) vmware(0): No 3D acceleration. Not setting up textured video.
+[ 37864.493] (WW) vmware(0): Disabling Xv because no adaptors could be initialized.
+[ 37864.493] (II) Initializing extension Generic Event Extension
+[ 37864.493] (II) Initializing extension SHAPE
+[ 37864.493] (II) Initializing extension MIT-SHM
+[ 37864.493] (II) Initializing extension XInputExtension
+[ 37864.494] (II) Initializing extension XTEST
+[ 37864.494] (II) Initializing extension BIG-REQUESTS
+[ 37864.494] (II) Initializing extension SYNC
+[ 37864.495] (II) Initializing extension XKEYBOARD
+[ 37864.495] (II) Initializing extension XC-MISC
+[ 37864.495] (II) Initializing extension SECURITY
+[ 37864.496] (II) Initializing extension XFIXES
+[ 37864.496] (II) Initializing extension RENDER
+[ 37864.496] (II) Initializing extension RANDR
+[ 37864.496] (II) Initializing extension COMPOSITE
+[ 37864.497] (II) Initializing extension DAMAGE
+[ 37864.497] (II) Initializing extension MIT-SCREEN-SAVER
+[ 37864.497] (II) Initializing extension DOUBLE-BUFFER
+[ 37864.497] (II) Initializing extension RECORD
+[ 37864.498] (II) Initializing extension DPMS
+[ 37864.498] (II) Initializing extension Present
+[ 37864.498] (II) Initializing extension DRI3
+[ 37864.498] (II) Initializing extension X-Resource
+[ 37864.498] (II) Initializing extension XVideo
+[ 37864.498] (II) Initializing extension XVideo-MotionCompensation
+[ 37864.498] (II) Initializing extension SELinux
+[ 37864.498] (II) SELinux: Disabled on system
+[ 37864.498] (II) Initializing extension GLX
+[ 37864.499] (II) AIGLX: Screen 0 is not DRI2 capable
+[ 37864.509] (II) IGLX: Loaded and initialized swrast
+[ 37864.509] (II) GLX: Initialized DRISWRAST GL provider for screen 0
+[ 37864.509] (II) Initializing extension XFree86-VidModeExtension
+[ 37864.509] (II) Initializing extension XFree86-DGA
+[ 37864.510] (II) Initializing extension XFree86-DRI
+[ 37864.510] (II) Initializing extension DRI2
+[ 37864.521] (II) vmware(0): Setting screen physical size to 508 x 257
+[ 37864.571] (II) config/udev: Adding input device Power Button (/dev/input/event0)
+[ 37864.571] (**) Power Button: Applying InputClass "libinput keyboard catchall"
+[ 37864.571] (II) LoadModule: "libinput"
+[ 37864.572] (II) Loading /usr/lib/xorg/modules/input/libinput_drv.so
+[ 37864.573] (II) Module libinput: vendor="X.Org Foundation"
+[ 37864.573] 	compiled for 1.20.8, module version = 0.30.0
+[ 37864.573] 	Module class: X.Org XInput Driver
+[ 37864.573] 	ABI class: X.Org XInput driver, version 24.1
+[ 37864.573] (II) Using input driver 'libinput' for 'Power Button'
+[ 37864.574] (II) systemd-logind: got fd for /dev/input/event0 13:64 fd 23 paused 0
+[ 37864.574] (**) Power Button: always reports core events
+[ 37864.574] (**) Option "Device" "/dev/input/event0"
+[ 37864.574] (**) Option "_source" "server/udev"
+[ 37864.576] (II) event0  - Power Button: is tagged by udev as: Keyboard
+[ 37864.576] (II) event0  - Power Button: device is a keyboard
+[ 37864.576] (II) event0  - Power Button: device removed
+[ 37864.576] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXPWRBN:00/input/input0/event0"
+[ 37864.576] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 6)
+[ 37864.576] (**) Option "xkb_layout" "de,us,pl"
+[ 37864.576] (**) Option "xkb_variant" ",,"
+[ 37864.614] (II) event0  - Power Button: is tagged by udev as: Keyboard
+[ 37864.614] (II) event0  - Power Button: device is a keyboard
+[ 37864.615] (II) config/udev: Adding input device Sleep Button (/dev/input/event1)
+[ 37864.615] (**) Sleep Button: Applying InputClass "libinput keyboard catchall"
+[ 37864.615] (II) Using input driver 'libinput' for 'Sleep Button'
+[ 37864.616] (II) systemd-logind: got fd for /dev/input/event1 13:65 fd 26 paused 0
+[ 37864.616] (**) Sleep Button: always reports core events
+[ 37864.616] (**) Option "Device" "/dev/input/event1"
+[ 37864.616] (**) Option "_source" "server/udev"
+[ 37864.617] (II) event1  - Sleep Button: is tagged by udev as: Keyboard
+[ 37864.617] (II) event1  - Sleep Button: device is a keyboard
+[ 37864.617] (II) event1  - Sleep Button: device removed
+[ 37864.617] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSLPBN:00/input/input1/event1"
+[ 37864.617] (II) XINPUT: Adding extended input device "Sleep Button" (type: KEYBOARD, id 7)
+[ 37864.617] (**) Option "xkb_layout" "de,us,pl"
+[ 37864.617] (**) Option "xkb_variant" ",,"
+[ 37864.619] (II) event1  - Sleep Button: is tagged by udev as: Keyboard
+[ 37864.619] (II) event1  - Sleep Button: device is a keyboard
+[ 37864.619] (II) config/udev: Adding input device Video Bus (/dev/input/event3)
+[ 37864.619] (**) Video Bus: Applying InputClass "libinput keyboard catchall"
+[ 37864.619] (II) Using input driver 'libinput' for 'Video Bus'
+[ 37864.622] (II) systemd-logind: got fd for /dev/input/event3 13:67 fd 27 paused 0
+[ 37864.622] (**) Video Bus: always reports core events
+[ 37864.622] (**) Option "Device" "/dev/input/event3"
+[ 37864.622] (**) Option "_source" "server/udev"
+[ 37864.623] (II) event3  - Video Bus: is tagged by udev as: Keyboard
+[ 37864.623] (II) event3  - Video Bus: device is a keyboard
+[ 37864.623] (II) event3  - Video Bus: device removed
+[ 37864.623] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A03:00/LNXVIDEO:00/input/input4/event3"
+[ 37864.623] (II) XINPUT: Adding extended input device "Video Bus" (type: KEYBOARD, id 8)
+[ 37864.623] (**) Option "xkb_layout" "de,us,pl"
+[ 37864.623] (**) Option "xkb_variant" ",,"
+[ 37864.626] (II) event3  - Video Bus: is tagged by udev as: Keyboard
+[ 37864.626] (II) event3  - Video Bus: device is a keyboard
+[ 37864.630] (II) config/udev: Adding input device VirtualBox mouse integration (/dev/input/event6)
+[ 37864.630] (**) VirtualBox mouse integration: Applying InputClass "libinput pointer catchall"
+[ 37864.630] (II) Using input driver 'libinput' for 'VirtualBox mouse integration'
+[ 37864.633] (II) systemd-logind: got fd for /dev/input/event6 13:70 fd 28 paused 0
+[ 37864.633] (**) VirtualBox mouse integration: always reports core events
+[ 37864.633] (**) Option "Device" "/dev/input/event6"
+[ 37864.633] (**) Option "_source" "server/udev"
+[ 37864.634] (II) event6  - VirtualBox mouse integration: is tagged by udev as: Mouse
+[ 37864.635] (II) event6  - VirtualBox mouse integration: device is a pointer
+[ 37864.635] (II) event6  - VirtualBox mouse integration: device removed
+[ 37864.635] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:04.0/input/input7/event6"
+[ 37864.635] (II) XINPUT: Adding extended input device "VirtualBox mouse integration" (type: MOUSE, id 9)
+[ 37864.635] (**) Option "AccelerationScheme" "none"
+[ 37864.635] (**) VirtualBox mouse integration: (accel) selected scheme none/0
+[ 37864.635] (**) VirtualBox mouse integration: (accel) acceleration factor: 2.000
+[ 37864.635] (**) VirtualBox mouse integration: (accel) acceleration threshold: 4
+[ 37864.636] (II) event6  - VirtualBox mouse integration: is tagged by udev as: Mouse
+[ 37864.637] (II) event6  - VirtualBox mouse integration: device is a pointer
+[ 37864.637] (II) config/udev: Adding input device VirtualBox mouse integration (/dev/input/js1)
+[ 37864.637] (II) No input driver specified, ignoring this device.
+[ 37864.637] (II) This device may have been added with another device file.
+[ 37864.639] (II) config/udev: Adding input device VirtualBox USB Tablet (/dev/input/event5)
+[ 37864.639] (**) VirtualBox USB Tablet: Applying InputClass "libinput pointer catchall"
+[ 37864.639] (II) Using input driver 'libinput' for 'VirtualBox USB Tablet'
+[ 37864.641] (II) systemd-logind: got fd for /dev/input/event5 13:69 fd 29 paused 0
+[ 37864.641] (**) VirtualBox USB Tablet: always reports core events
+[ 37864.641] (**) Option "Device" "/dev/input/event5"
+[ 37864.641] (**) Option "_source" "server/udev"
+[ 37864.644] (II) event5  - VirtualBox USB Tablet: is tagged by udev as: Mouse
+[ 37864.645] (II) event5  - VirtualBox USB Tablet: device is a pointer
+[ 37864.645] (II) event5  - VirtualBox USB Tablet: device removed
+[ 37864.645] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:06.0/usb1/1-1/1-1:1.0/0003:80EE:0021.0002/input/input8/event5"
+[ 37864.645] (II) XINPUT: Adding extended input device "VirtualBox USB Tablet" (type: MOUSE, id 10)
+[ 37864.645] (**) Option "AccelerationScheme" "none"
+[ 37864.645] (**) VirtualBox USB Tablet: (accel) selected scheme none/0
+[ 37864.645] (**) VirtualBox USB Tablet: (accel) acceleration factor: 2.000
+[ 37864.645] (**) VirtualBox USB Tablet: (accel) acceleration threshold: 4
+[ 37864.647] (II) event5  - VirtualBox USB Tablet: is tagged by udev as: Mouse
+[ 37864.647] (II) event5  - VirtualBox USB Tablet: device is a pointer
+[ 37864.648] (II) config/udev: Adding input device VirtualBox USB Tablet (/dev/input/js0)
+[ 37864.648] (II) No input driver specified, ignoring this device.
+[ 37864.648] (II) This device may have been added with another device file.
+[ 37864.649] (II) config/udev: Adding input device VirtualBox USB Tablet (/dev/input/mouse1)
+[ 37864.649] (II) No input driver specified, ignoring this device.
+[ 37864.649] (II) This device may have been added with another device file.
+[ 37864.649] (II) config/udev: Adding input device AT Translated Set 2 keyboard (/dev/input/event2)
+[ 37864.649] (**) AT Translated Set 2 keyboard: Applying InputClass "libinput keyboard catchall"
+[ 37864.650] (II) Using input driver 'libinput' for 'AT Translated Set 2 keyboard'
+[ 37864.651] (II) systemd-logind: got fd for /dev/input/event2 13:66 fd 30 paused 0
+[ 37864.651] (**) AT Translated Set 2 keyboard: always reports core events
+[ 37864.651] (**) Option "Device" "/dev/input/event2"
+[ 37864.651] (**) Option "_source" "server/udev"
+[ 37864.652] (II) event2  - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+[ 37864.652] (II) event2  - AT Translated Set 2 keyboard: device is a keyboard
+[ 37864.653] (II) event2  - AT Translated Set 2 keyboard: device removed
+[ 37864.653] (**) Option "config_info" "udev:/sys/devices/platform/i8042/serio0/input/input2/event2"
+[ 37864.653] (II) XINPUT: Adding extended input device "AT Translated Set 2 keyboard" (type: KEYBOARD, id 11)
+[ 37864.653] (**) Option "xkb_layout" "de,us,pl"
+[ 37864.653] (**) Option "xkb_variant" ",,"
+[ 37864.654] (II) event2  - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+[ 37864.654] (II) event2  - AT Translated Set 2 keyboard: device is a keyboard
+[ 37864.655] (II) config/udev: Adding input device ImExPS/2 Generic Explorer Mouse (/dev/input/event4)
+[ 37864.655] (**) ImExPS/2 Generic Explorer Mouse: Applying InputClass "libinput pointer catchall"
+[ 37864.655] (II) Using input driver 'libinput' for 'ImExPS/2 Generic Explorer Mouse'
+[ 37864.656] (II) systemd-logind: got fd for /dev/input/event4 13:68 fd 31 paused 0
+[ 37864.656] (**) ImExPS/2 Generic Explorer Mouse: always reports core events
+[ 37864.656] (**) Option "Device" "/dev/input/event4"
+[ 37864.656] (**) Option "_source" "server/udev"
+[ 37864.657] (II) event4  - ImExPS/2 Generic Explorer Mouse: is tagged by udev as: Mouse
+[ 37864.657] (II) event4  - ImExPS/2 Generic Explorer Mouse: device is a pointer
+[ 37864.658] (II) event4  - ImExPS/2 Generic Explorer Mouse: device removed
+[ 37864.658] (**) Option "config_info" "udev:/sys/devices/platform/i8042/serio1/input/input5/event4"
+[ 37864.658] (II) XINPUT: Adding extended input device "ImExPS/2 Generic Explorer Mouse" (type: MOUSE, id 12)
+[ 37864.658] (**) Option "AccelerationScheme" "none"
+[ 37864.658] (**) ImExPS/2 Generic Explorer Mouse: (accel) selected scheme none/0
+[ 37864.658] (**) ImExPS/2 Generic Explorer Mouse: (accel) acceleration factor: 2.000
+[ 37864.658] (**) ImExPS/2 Generic Explorer Mouse: (accel) acceleration threshold: 4
+[ 37864.660] (II) event4  - ImExPS/2 Generic Explorer Mouse: is tagged by udev as: Mouse
+[ 37864.660] (II) event4  - ImExPS/2 Generic Explorer Mouse: device is a pointer
+[ 37864.660] (II) config/udev: Adding input device ImExPS/2 Generic Explorer Mouse (/dev/input/mouse0)
+[ 37864.660] (II) No input driver specified, ignoring this device.
+[ 37864.661] (II) This device may have been added with another device file.
+[ 38051.954] (II) event6  - VirtualBox mouse integration: SYN_DROPPED event - some input events have been lost.
+[ 38363.136] (EE) No surface to present from.
+[ 38894.354] (II) event6  - VirtualBox mouse integration: SYN_DROPPED event - some input events have been lost.
+[ 39036.816] (II) event6  - VirtualBox mouse integration: SYN_DROPPED event - some input events have been lost.
+[ 39500.953] (II) event6  - VirtualBox mouse integration: SYN_DROPPED event - some input events have been lost.
+[ 39592.993] (II) event6  - VirtualBox mouse integration: SYN_DROPPED event - some input events have been lost.
+[ 39595.241] (II) event6  - VirtualBox mouse integration: SYN_DROPPED event - some input events have been lost.
+[ 39983.523] (II) event6  - VirtualBox mouse integration: SYN_DROPPED event - some input events have been lost.
+[ 40003.669] (EE) No surface to present from.
+[ 40184.263] (II) event6  - VirtualBox mouse integration: SYN_DROPPED event - some input events have been lost.
+[ 40221.853] (II) event6  - VirtualBox mouse integration: SYN_DROPPED event - some input events have been lost.
+[ 40255.250] (II) event4  - ImExPS/2 Generic Explorer Mouse: Enabling spurious button debouncing, see https://wayland.freedesktop.org/libinput/doc/1.16.2/button-debouncing.html for details
+[ 40485.756] (EE) No surface to present from.
+[ 40499.523] (II) event6  - VirtualBox mouse integration: SYN_DROPPED event - some input events have been lost.
+[ 40583.719] (II) event6  - VirtualBox mouse integration: SYN_DROPPED event - some input events have been lost.
+[ 40673.191] (II) event6  - VirtualBox mouse integration: SYN_DROPPED event - some input events have been lost.
+[ 40800.924] (II) event6  - VirtualBox mouse integration: SYN_DROPPED event - some input events have been lost.
+[ 40852.693] (II) event6  - VirtualBox mouse integration: SYN_DROPPED event - some input events have been lost.
+[ 40915.971] (II) event6  - VirtualBox mouse integration: SYN_DROPPED event - some input events have been lost.
+[ 40929.166] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 146ms, your system is too slow
+[ 41041.343] (II) event6  - VirtualBox mouse integration: SYN_DROPPED event - some input events have been lost.
+[ 41074.495] (EE) client bug: timer event4 debounce short: scheduled expiry is in the past (-3ms), your system is too slow
+[ 41276.332] (EE) No surface to present from.
+[ 41383.023] (II) event6  - VirtualBox mouse integration: SYN_DROPPED event - some input events have been lost.
+[ 41497.797] (II) event6  - VirtualBox mouse integration: SYN_DROPPED event - some input events have been lost.
+[ 41525.035] (II) event6  - VirtualBox mouse integration: SYN_DROPPED event - some input events have been lost.
+[ 41687.350] (II) event6  - VirtualBox mouse integration: SYN_DROPPED event - some input events have been lost.
+[ 41733.982] (II) event6  - VirtualBox mouse integration: SYN_DROPPED event - some input events have been lost.
+[ 41771.725] (II) event6  - VirtualBox mouse integration: SYN_DROPPED event - some input events have been lost.
+[ 41891.649] (II) event6  - VirtualBox mouse integration: SYN_DROPPED event - some input events have been lost.
+[ 41899.829] (II) event6  - VirtualBox mouse integration: SYN_DROPPED event - some input events have been lost.
+[ 41927.005] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 13ms, your system is too slow
+[ 41949.270] (EE) event2  - AT Translated Set 2 keyboard: client bug: event processing lagging behind by 11ms, your system is too slow
+[ 42007.748] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 319ms, your system is too slow
+[ 42039.901] (II) event6  - VirtualBox mouse integration: SYN_DROPPED event - some input events have been lost.
+[ 42279.575] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 493ms, your system is too slow
+[ 42317.447] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 371ms, your system is too slow
+[ 42317.449] (EE) event2  - AT Translated Set 2 keyboard: client bug: event processing lagging behind by 17ms, your system is too slow
+[ 42483.464] (EE) event2  - AT Translated Set 2 keyboard: client bug: event processing lagging behind by 15ms, your system is too slow
+[ 42549.664] (II) event6  - VirtualBox mouse integration: SYN_DROPPED event - some input events have been lost.
+[ 42847.977] (II) event6  - VirtualBox mouse integration: SYN_DROPPED event - some input events have been lost.
+[ 42853.991] (II) event6  - VirtualBox mouse integration: SYN_DROPPED event - some input events have been lost.
+[ 42854.557] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 443ms, your system is too slow
+[ 42908.767] (II) event6  - VirtualBox mouse integration: SYN_DROPPED event - some input events have been lost.
+[ 42919.855] (II) event6  - VirtualBox mouse integration: SYN_DROPPED event - some input events have been lost.
+[ 43369.880] (EE) No surface to present from.
+[ 43440.982] (II) event6  - VirtualBox mouse integration: SYN_DROPPED event - some input events have been lost.
+[ 43484.399] (II) event6  - VirtualBox mouse integration: SYN_DROPPED event - some input events have been lost.
+[ 43544.373] (II) event6  - VirtualBox mouse integration: SYN_DROPPED event - some input events have been lost.
+[ 43545.288] (II) event6  - VirtualBox mouse integration: SYN_DROPPED event - some input events have been lost.
+[ 43572.992] (II) event6  - VirtualBox mouse integration: SYN_DROPPED event - some input events have been lost.
+[ 43587.616] (II) event6  - VirtualBox mouse integration: SYN_DROPPED event - some input events have been lost.
+[ 43619.303] (II) event6  - VirtualBox mouse integration: SYN_DROPPED event - some input events have been lost.
+[ 43774.518] (II) event6  - VirtualBox mouse integration: SYN_DROPPED event - some input events have been lost.
+[ 44104.427] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 11ms, your system is too slow
+[ 44109.735] (II) event6  - VirtualBox mouse integration: SYN_DROPPED event - some input events have been lost.
+[ 44147.996] (II) event6  - VirtualBox mouse integration: SYN_DROPPED event - some input events have been lost.
+[ 44686.417] (EE) No surface to present from.
+[ 44762.727] (II) event6  - VirtualBox mouse integration: SYN_DROPPED event - some input events have been lost.
+[ 44854.179] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 493ms, your system is too slow
+[ 45165.281] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 481ms, your system is too slow
+[ 45169.318] (II) event6  - VirtualBox mouse integration: SYN_DROPPED event - some input events have been lost.
+[ 45173.186] (II) event6  - VirtualBox mouse integration: SYN_DROPPED event - some input events have been lost.
+[ 45191.023] (II) event6  - VirtualBox mouse integration: SYN_DROPPED event - some input events have been lost.
+[ 45212.871] (II) event6  - VirtualBox mouse integration: SYN_DROPPED event - some input events have been lost.
+[ 45336.875] (II) event6  - VirtualBox mouse integration: SYN_DROPPED event - some input events have been lost.
+[ 45377.620] (II) event6  - VirtualBox mouse integration: SYN_DROPPED event - some input events have been lost.
+[ 45425.951] (II) event6  - VirtualBox mouse integration: SYN_DROPPED event - some input events have been lost.
+[ 45468.481] (II) event6  - VirtualBox mouse integration: SYN_DROPPED event - some input events have been lost.
+[ 45483.747] (II) event6  - VirtualBox mouse integration: SYN_DROPPED event - some input events have been lost.
+[ 45507.276] (II) event6  - VirtualBox mouse integration: SYN_DROPPED event - some input events have been lost.
+[ 45537.418] (II) event6  - VirtualBox mouse integration: SYN_DROPPED event - some input events have been lost.
+[ 45703.101] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 483ms, your system is too slow
+[ 45715.816] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 327ms, your system is too slow
+[ 45809.685] (II) event6  - VirtualBox mouse integration: SYN_DROPPED event - some input events have been lost.
+[ 45913.725] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 490ms, your system is too slow
+[ 45917.540] (EE) No surface to present from.
+[ 45934.451] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 15ms, your system is too slow
+[ 46137.408] (EE) No surface to present from.
+[ 46495.208] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 495ms, your system is too slow
+[ 46528.112] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 11ms, your system is too slow
+[ 46831.782] (II) event6  - VirtualBox mouse integration: SYN_DROPPED event - some input events have been lost.
+[ 47072.528] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 500ms, your system is too slow
+[ 47106.815] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 485ms, your system is too slow
+[ 47348.887] (EE) client bug: timer event4 debounce: scheduled expiry is in the past (-0ms), your system is too slow
+[ 47388.535] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 486ms, your system is too slow
+[ 47666.989] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 239ms, your system is too slow
+[ 47771.329] (II) event6  - VirtualBox mouse integration: SYN_DROPPED event - some input events have been lost.
+[ 48197.636] (EE) event2  - AT Translated Set 2 keyboard: client bug: event processing lagging behind by 12ms, your system is too slow
+[ 48238.588] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 112ms, your system is too slow
+[ 48407.879] (II) event6  - VirtualBox mouse integration: SYN_DROPPED event - some input events have been lost.
+[ 48626.515] (II) event6  - VirtualBox mouse integration: SYN_DROPPED event - some input events have been lost.
+[ 48883.734] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 491ms, your system is too slow
+[ 48927.151] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 13ms, your system is too slow
+[ 49289.013] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 170ms, your system is too slow
+[ 49346.812] (II) event6  - VirtualBox mouse integration: SYN_DROPPED event - some input events have been lost.
+[ 49394.175] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 494ms, your system is too slow
+[ 49503.423] (II) event6  - VirtualBox mouse integration: SYN_DROPPED event - some input events have been lost.
+[ 49577.218] (II) event6  - VirtualBox mouse integration: SYN_DROPPED event - some input events have been lost.
+[ 49684.033] (II) event6  - VirtualBox mouse integration: SYN_DROPPED event - some input events have been lost.
+[ 49945.250] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 50ms, your system is too slow
+[ 49965.402] (II) event6  - VirtualBox mouse integration: SYN_DROPPED event - some input events have been lost.
+[ 49999.965] (II) event6  - VirtualBox mouse integration: SYN_DROPPED event - some input events have been lost.
+[ 50005.211] (II) event6  - VirtualBox mouse integration: SYN_DROPPED event - some input events have been lost.
+[ 50010.339] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 227ms, your system is too slow
+[ 50205.727] (II) event6  - VirtualBox mouse integration: SYN_DROPPED event - some input events have been lost.
+[ 50359.936] (II) event6  - VirtualBox mouse integration: SYN_DROPPED event - some input events have been lost.
+[ 50453.626] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 12ms, your system is too slow
+[ 50489.647] (II) event6  - VirtualBox mouse integration: SYN_DROPPED event - some input events have been lost.
+[ 50768.937] (II) event6  - VirtualBox mouse integration: SYN_DROPPED event - some input events have been lost.
+[ 50821.617] (II) event6  - VirtualBox mouse integration: SYN_DROPPED event - some input events have been lost.
+[ 50822.295] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 126ms, your system is too slow
+[ 51111.015] (II) event6  - VirtualBox mouse integration: SYN_DROPPED event - some input events have been lost.
+[ 51219.697] (EE) No surface to present from.
+[ 51339.151] (II) event6  - VirtualBox mouse integration: SYN_DROPPED event - some input events have been lost.
+[ 51359.585] (EE) event2  - AT Translated Set 2 keyboard: client bug: event processing lagging behind by 11ms, your system is too slow
+[ 51366.985] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 323ms, your system is too slow
+[ 51379.483] (II) event6  - VirtualBox mouse integration: SYN_DROPPED event - some input events have been lost.
+[ 51510.028] (II) event6  - VirtualBox mouse integration: SYN_DROPPED event - some input events have been lost.
+[ 51511.038] (II) event6  - VirtualBox mouse integration: SYN_DROPPED event - some input events have been lost.
+[ 51959.006] (II) event6  - VirtualBox mouse integration: SYN_DROPPED event - some input events have been lost.
+[ 52328.721] (II) event6  - VirtualBox mouse integration: SYN_DROPPED event - some input events have been lost.
+[ 52713.151] (II) event6  - VirtualBox mouse integration: SYN_DROPPED event - some input events have been lost.
+[ 52740.783] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 212ms, your system is too slow
+[ 52877.162] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 12ms, your system is too slow
+[ 53146.041] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 498ms, your system is too slow
+[ 53204.306] (II) event6  - VirtualBox mouse integration: SYN_DROPPED event - some input events have been lost.
+[ 53310.735] (II) event6  - VirtualBox mouse integration: SYN_DROPPED event - some input events have been lost.
+[ 53537.864] (II) event6  - VirtualBox mouse integration: SYN_DROPPED event - some input events have been lost.
+[ 53608.003] (II) event6  - VirtualBox mouse integration: SYN_DROPPED event - some input events have been lost.
+[ 53620.834] (II) event6  - VirtualBox mouse integration: SYN_DROPPED event - some input events have been lost.
+[ 53736.622] (II) event6  - VirtualBox mouse integration: SYN_DROPPED event - some input events have been lost.
+[ 53750.128] (II) event6  - VirtualBox mouse integration: SYN_DROPPED event - some input events have been lost.
+[ 53822.101] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 18ms, your system is too slow
+[ 53960.475] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 37ms, your system is too slow
+[ 53979.377] (II) event6  - VirtualBox mouse integration: SYN_DROPPED event - some input events have been lost.
+[ 54098.081] (II) event6  - VirtualBox mouse integration: SYN_DROPPED event - some input events have been lost.
+[ 54258.659] (II) event6  - VirtualBox mouse integration: SYN_DROPPED event - some input events have been lost.
+[ 54355.971] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 417ms, your system is too slow
+[ 54489.549] (II) event6  - VirtualBox mouse integration: SYN_DROPPED event - some input events have been lost.
+[ 54580.479] (II) event6  - VirtualBox mouse integration: SYN_DROPPED event - some input events have been lost.
+[ 54618.209] (II) event6  - VirtualBox mouse integration: SYN_DROPPED event - some input events have been lost.
+[ 54671.324] (EE) event2  - AT Translated Set 2 keyboard: client bug: event processing lagging behind by 14ms, your system is too slow
+[ 54739.611] (II) event6  - VirtualBox mouse integration: SYN_DROPPED event - some input events have been lost.
+[ 54807.350] (II) event6  - VirtualBox mouse integration: SYN_DROPPED event - some input events have been lost.
+[ 54823.953] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 88ms, your system is too slow
+[ 54917.227] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 16ms, your system is too slow
+[ 54976.371] (II) event6  - VirtualBox mouse integration: SYN_DROPPED event - some input events have been lost.
+[ 55011.185] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 394ms, your system is too slow
+[ 55255.094] (II) event6  - VirtualBox mouse integration: SYN_DROPPED event - some input events have been lost.
+[ 55260.868] (II) config/udev: removing device VirtualBox USB Tablet
+[ 55260.869] (**) Option "fd" "29"
+[ 55260.869] (II) event5  - VirtualBox USB Tablet: device removed
+[ 55260.903] (II) UnloadModule: "libinput"
+[ 55260.904] (II) systemd-logind: releasing fd for 13:69
+[ 55260.918] (EE) systemd-logind: failed to release device: Device not taken
+[ 55262.275] (II) config/udev: Adding input device VirtualBox USB Tablet (/dev/input/mouse1)
+[ 55262.275] (II) No input driver specified, ignoring this device.
+[ 55262.275] (II) This device may have been added with another device file.
+[ 55262.277] (II) config/udev: Adding input device VirtualBox USB Tablet (/dev/input/js0)
+[ 55262.277] (II) No input driver specified, ignoring this device.
+[ 55262.277] (II) This device may have been added with another device file.
+[ 55262.357] (II) config/udev: Adding input device VirtualBox USB Tablet (/dev/input/event5)
+[ 55262.357] (**) VirtualBox USB Tablet: Applying InputClass "libinput pointer catchall"
+[ 55262.357] (II) Using input driver 'libinput' for 'VirtualBox USB Tablet'
+[ 55262.455] (II) systemd-logind: got fd for /dev/input/event5 13:69 fd 57 paused 0
+[ 55262.455] (**) VirtualBox USB Tablet: always reports core events
+[ 55262.455] (**) Option "Device" "/dev/input/event5"
+[ 55262.455] (**) Option "_source" "server/udev"
+[ 55262.457] (II) event5  - VirtualBox USB Tablet: is tagged by udev as: Mouse
+[ 55262.457] (II) event5  - VirtualBox USB Tablet: device is a pointer
+[ 55262.457] (II) event5  - VirtualBox USB Tablet: device removed
+[ 55262.457] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:06.0/usb1/1-1/1-1:1.0/0003:80EE:0021.0003/input/input9/event5"
+[ 55262.457] (II) XINPUT: Adding extended input device "VirtualBox USB Tablet" (type: MOUSE, id 10)
+[ 55262.462] (**) Option "AccelerationScheme" "none"
+[ 55262.462] (**) VirtualBox USB Tablet: (accel) selected scheme none/0
+[ 55262.462] (**) VirtualBox USB Tablet: (accel) acceleration factor: 2.000
+[ 55262.462] (**) VirtualBox USB Tablet: (accel) acceleration threshold: 4
+[ 55262.464] (II) event5  - VirtualBox USB Tablet: is tagged by udev as: Mouse
+[ 55262.464] (II) event5  - VirtualBox USB Tablet: device is a pointer
+[ 55452.024] (EE) No surface to present from.
+[ 55456.804] (EE) No surface to present from.
+[ 55724.725] (EE) No surface to present from.
+[ 55775.935] (EE) No surface to present from.
+[ 55882.132] (EE) No surface to present from.
+[ 59273.597] (EE) No surface to present from.
+[ 59998.822] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 13ms, your system is too slow
+[ 60113.398] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 11ms, your system is too slow
+[ 61131.864] (EE) No surface to present from.
+[ 61178.400] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 12ms, your system is too slow
+[ 61186.807] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 14ms, your system is too slow
+[ 62568.600] (EE) No surface to present from.
+[ 62802.740] (EE) No surface to present from.
+[ 62894.719] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 13ms, your system is too slow
+[ 63015.642] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 12ms, your system is too slow
+[ 63230.451] (EE) client bug: timer event4 debounce: scheduled expiry is in the past (-76ms), your system is too slow
+[ 63388.978] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 13ms, your system is too slow
+[ 64937.314] (EE) No surface to present from.
+[ 65147.573] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 12ms, your system is too slow
+[ 65399.562] (EE) No surface to present from.
+[ 65667.227] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 14ms, your system is too slow
+[ 65701.402] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 11ms, your system is too slow
+[ 65937.275] (EE) No surface to present from.
+[ 67050.923] (EE) No surface to present from.
+[ 67282.298] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 15ms, your system is too slow
+[ 68018.169] (EE) No surface to present from.
+[ 68238.974] (EE) No surface to present from.
+[ 68573.438] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 14ms, your system is too slow
+[ 69147.251] (EE) event4  - ImExPS/2 Generic Explorer Mouse: client bug: event processing lagging behind by 12ms, your system is too slow
+[ 69603.144] (EE) No surface to present from.
+[ 69649.903] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 11ms, your system is too slow
+[ 70304.329] (EE) No surface to present from.
+[ 71293.034] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 13ms, your system is too slow
+[ 71328.089] (EE) No surface to present from.
+[ 71415.058] (EE) No surface to present from.
+[ 71865.341] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 11ms, your system is too slow
+[ 76978.547] (EE) No surface to present from.
+[ 77408.975] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 14ms, your system is too slow
+[ 77656.378] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 11ms, your system is too slow
+[ 79279.748] (EE) No surface to present from.
+[ 79618.392] (EE) No surface to present from.
+[ 79668.347] (EE) No surface to present from.
+[ 82781.495] (EE) No surface to present from.
+[ 82825.421] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 13ms, your system is too slow
+[ 82833.310] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 13ms, your system is too slow
+[ 82851.808] (EE) client bug: timer event4 debounce short: scheduled expiry is in the past (-5ms), your system is too slow
+[ 83647.553] (EE) No surface to present from.
+[ 84102.994] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 12ms, your system is too slow
+[ 85188.623] (EE) No surface to present from.
+[ 87315.302] (EE) No surface to present from.
+[ 87650.801] (EE) client bug: timer event4 debounce short: scheduled expiry is in the past (-2ms), your system is too slow
+[ 89929.747] (EE) No surface to present from.
+[ 90577.046] (EE) No surface to present from.
+[ 91015.991] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 14ms, your system is too slow
+[ 91183.495] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 12ms, your system is too slow
+[ 91738.511] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 12ms, your system is too slow
+[ 92117.086] (EE) No surface to present from.
+[ 92153.456] (EE) No surface to present from.
+[ 92322.534] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 13ms, your system is too slow
+[ 93094.835] (EE) No surface to present from.
+[ 93375.495] (EE) event4  - ImExPS/2 Generic Explorer Mouse: client bug: event processing lagging behind by 1271310319ms, your system is too slow
+[ 93729.557] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 15ms, your system is too slow
+[ 94067.596] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 11ms, your system is too slow
+[ 94346.752] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 11ms, your system is too slow
+[ 96087.118] (EE) No surface to present from.
+[ 96234.539] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 15ms, your system is too slow
+[ 96491.736] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 15ms, your system is too slow
+[ 97650.187] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 12ms, your system is too slow
+[ 97656.709] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 11ms, your system is too slow
+[ 97691.133] (II) config/udev: removing device VirtualBox USB Tablet
+[ 97691.133] (**) Option "fd" "57"
+[ 97691.133] (II) event5  - VirtualBox USB Tablet: device removed
+[ 97691.295] (II) UnloadModule: "libinput"
+[ 97691.296] (II) systemd-logind: releasing fd for 13:69
+[ 97691.298] (EE) systemd-logind: failed to release device: Device not taken
+[ 97692.451] (II) config/udev: Adding input device VirtualBox USB Tablet (/dev/input/mouse1)
+[ 97692.451] (II) No input driver specified, ignoring this device.
+[ 97692.451] (II) This device may have been added with another device file.
+[ 97692.460] (II) config/udev: Adding input device VirtualBox USB Tablet (/dev/input/js0)
+[ 97692.460] (II) No input driver specified, ignoring this device.
+[ 97692.460] (II) This device may have been added with another device file.
+[ 97692.553] (II) config/udev: Adding input device VirtualBox USB Tablet (/dev/input/event5)
+[ 97692.553] (**) VirtualBox USB Tablet: Applying InputClass "libinput pointer catchall"
+[ 97692.553] (II) Using input driver 'libinput' for 'VirtualBox USB Tablet'
+[ 97692.647] (II) systemd-logind: got fd for /dev/input/event5 13:69 fd 57 paused 0
+[ 97692.648] (**) VirtualBox USB Tablet: always reports core events
+[ 97692.648] (**) Option "Device" "/dev/input/event5"
+[ 97692.648] (**) Option "_source" "server/udev"
+[ 97692.653] (II) event5  - VirtualBox USB Tablet: is tagged by udev as: Mouse
+[ 97692.655] (II) event5  - VirtualBox USB Tablet: device is a pointer
+[ 97692.656] (II) event5  - VirtualBox USB Tablet: device removed
+[ 97692.656] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:06.0/usb1/1-1/1-1:1.0/0003:80EE:0021.0004/input/input10/event5"
+[ 97692.656] (II) XINPUT: Adding extended input device "VirtualBox USB Tablet" (type: MOUSE, id 10)
+[ 97692.658] (**) Option "AccelerationScheme" "none"
+[ 97692.659] (**) VirtualBox USB Tablet: (accel) selected scheme none/0
+[ 97692.659] (**) VirtualBox USB Tablet: (accel) acceleration factor: 2.000
+[ 97692.659] (**) VirtualBox USB Tablet: (accel) acceleration threshold: 4
+[ 97692.662] (II) event5  - VirtualBox USB Tablet: is tagged by udev as: Mouse
+[ 97692.663] (II) event5  - VirtualBox USB Tablet: device is a pointer
+[ 98398.260] (II) event6  - VirtualBox mouse integration: SYN_DROPPED event - some input events have been lost.
+[ 98434.942] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 392ms, your system is too slow
+[ 98438.158] (II) event6  - VirtualBox mouse integration: SYN_DROPPED event - some input events have been lost.
+[ 98545.300] (II) event6  - VirtualBox mouse integration: SYN_DROPPED event - some input events have been lost.
+[ 98786.259] (II) event6  - VirtualBox mouse integration: SYN_DROPPED event - some input events have been lost.
+[ 98808.243] (II) event6  - VirtualBox mouse integration: SYN_DROPPED event - some input events have been lost.
+[ 98823.211] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 299ms, your system is too slow
+[ 99011.363] (II) event6  - VirtualBox mouse integration: SYN_DROPPED event - some input events have been lost.
+[ 99022.117] (EE) event2  - AT Translated Set 2 keyboard: client bug: event processing lagging behind by 176ms, your system is too slow
+[ 99053.368] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 247ms, your system is too slow
+[ 99237.807] (II) config/udev: removing device VirtualBox USB Tablet
+[ 99237.807] (**) Option "fd" "57"
+[ 99237.807] (II) event5  - VirtualBox USB Tablet: device removed
+[ 99237.808] (II) UnloadModule: "libinput"
+[ 99237.808] (II) systemd-logind: releasing fd for 13:69
+[ 99239.025] (II) config/udev: Adding input device VirtualBox USB Tablet (/dev/input/mouse1)
+[ 99239.025] (II) No input driver specified, ignoring this device.
+[ 99239.025] (II) This device may have been added with another device file.
+[ 99239.031] (II) config/udev: Adding input device VirtualBox USB Tablet (/dev/input/js0)
+[ 99239.031] (II) No input driver specified, ignoring this device.
+[ 99239.031] (II) This device may have been added with another device file.
+[ 99239.171] (II) config/udev: Adding input device VirtualBox USB Tablet (/dev/input/event5)
+[ 99239.171] (**) VirtualBox USB Tablet: Applying InputClass "libinput pointer catchall"
+[ 99239.171] (II) Using input driver 'libinput' for 'VirtualBox USB Tablet'
+[ 99239.232] (II) systemd-logind: got fd for /dev/input/event5 13:69 fd 57 paused 0
+[ 99239.232] (**) VirtualBox USB Tablet: always reports core events
+[ 99239.232] (**) Option "Device" "/dev/input/event5"
+[ 99239.232] (**) Option "_source" "server/udev"
+[ 99239.235] (II) event5  - VirtualBox USB Tablet: is tagged by udev as: Mouse
+[ 99239.235] (II) event5  - VirtualBox USB Tablet: device is a pointer
+[ 99239.236] (II) event5  - VirtualBox USB Tablet: device removed
+[ 99239.236] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:06.0/usb1/1-1/1-1:1.0/0003:80EE:0021.0005/input/input11/event5"
+[ 99239.236] (II) XINPUT: Adding extended input device "VirtualBox USB Tablet" (type: MOUSE, id 10)
+[ 99239.236] (**) Option "AccelerationScheme" "none"
+[ 99239.237] (**) VirtualBox USB Tablet: (accel) selected scheme none/0
+[ 99239.237] (**) VirtualBox USB Tablet: (accel) acceleration factor: 2.000
+[ 99239.237] (**) VirtualBox USB Tablet: (accel) acceleration threshold: 4
+[ 99239.241] (II) event5  - VirtualBox USB Tablet: is tagged by udev as: Mouse
+[ 99239.241] (II) event5  - VirtualBox USB Tablet: device is a pointer
+[101677.888] (EE) No surface to present from.
+[101682.182] (EE) No surface to present from.
+[101891.348] (EE) client bug: timer event4 debounce short: scheduled expiry is in the past (-0ms), your system is too slow
+[101892.951] (EE) client bug: timer event4 debounce short: scheduled expiry is in the past (-0ms), your system is too slow
+[102062.159] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 12ms, your system is too slow
+[102246.248] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 12ms, your system is too slow
+[103992.713] (EE) No surface to present from.
+[105498.441] (EE) event4  - ImExPS/2 Generic Explorer Mouse: client bug: event processing lagging behind by 12ms, your system is too slow
+[106234.948] (EE) No surface to present from.
+[106657.012] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 12ms, your system is too slow
+[107210.867] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 15ms, your system is too slow
+[108725.333] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 13ms, your system is too slow
+[108975.344] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 11ms, your system is too slow
+[109452.131] (II) config/udev: removing device VirtualBox USB Tablet
+[109452.132] (**) Option "fd" "57"
+[109452.132] (II) event5  - VirtualBox USB Tablet: device removed
+[109452.134] (II) UnloadModule: "libinput"
+[109452.135] (II) systemd-logind: releasing fd for 13:69
+[109453.247] (II) config/udev: Adding input device VirtualBox USB Tablet (/dev/input/mouse1)
+[109453.247] (II) No input driver specified, ignoring this device.
+[109453.247] (II) This device may have been added with another device file.
+[109453.258] (II) config/udev: Adding input device VirtualBox USB Tablet (/dev/input/js0)
+[109453.258] (II) No input driver specified, ignoring this device.
+[109453.258] (II) This device may have been added with another device file.
+[109453.328] (II) config/udev: Adding input device VirtualBox USB Tablet (/dev/input/event5)
+[109453.328] (**) VirtualBox USB Tablet: Applying InputClass "libinput pointer catchall"
+[109453.328] (II) Using input driver 'libinput' for 'VirtualBox USB Tablet'
+[109453.404] (II) systemd-logind: got fd for /dev/input/event5 13:69 fd 57 paused 0
+[109453.404] (**) VirtualBox USB Tablet: always reports core events
+[109453.404] (**) Option "Device" "/dev/input/event5"
+[109453.404] (**) Option "_source" "server/udev"
+[109453.405] (II) event5  - VirtualBox USB Tablet: is tagged by udev as: Mouse
+[109453.405] (II) event5  - VirtualBox USB Tablet: device is a pointer
+[109453.406] (II) event5  - VirtualBox USB Tablet: device removed
+[109453.406] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:06.0/usb1/1-1/1-1:1.0/0003:80EE:0021.0006/input/input12/event5"
+[109453.406] (II) XINPUT: Adding extended input device "VirtualBox USB Tablet" (type: MOUSE, id 10)
+[109453.407] (**) Option "AccelerationScheme" "none"
+[109453.408] (**) VirtualBox USB Tablet: (accel) selected scheme none/0
+[109453.408] (**) VirtualBox USB Tablet: (accel) acceleration factor: 2.000
+[109453.408] (**) VirtualBox USB Tablet: (accel) acceleration threshold: 4
+[109453.409] (II) event5  - VirtualBox USB Tablet: is tagged by udev as: Mouse
+[109453.409] (II) event5  - VirtualBox USB Tablet: device is a pointer
+[110221.445] (EE) No surface to present from.
+[110232.974] (EE) No surface to present from.
+[111520.063] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 12ms, your system is too slow
+[111665.002] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 11ms, your system is too slow
+[112821.972] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 14ms, your system is too slow
+[114211.021] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 12ms, your system is too slow
+[115256.175] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 11ms, your system is too slow
+[115920.843] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 12ms, your system is too slow
+[116283.825] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 11ms, your system is too slow
+[116602.424] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 13ms, your system is too slow
+[117176.499] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 13ms, your system is too slow
+[117671.336] (EE) No surface to present from.
+[118593.909] (EE) No surface to present from.
+[118718.914] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 11ms, your system is too slow
+[118800.683] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 11ms, your system is too slow
+[118960.061] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 12ms, your system is too slow
+[120101.423] (EE) No surface to present from.
+[120306.848] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 11ms, your system is too slow
+[121794.667] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 11ms, your system is too slow
+[122044.280] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 11ms, your system is too slow
+[122261.783] (EE) No surface to present from.
+[122265.942] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 11ms, your system is too slow
+[122755.520] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 12ms, your system is too slow
+[122927.930] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 12ms, your system is too slow
+[122932.372] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 11ms, your system is too slow
+[123290.953] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 11ms, your system is too slow
+[123805.647] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 18ms, your system is too slow
+[124067.779] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 12ms, your system is too slow
+[124125.445] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 11ms, your system is too slow
+[124435.315] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 14ms, your system is too slow
+[124941.802] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 12ms, your system is too slow
+[124949.384] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 11ms, your system is too slow
+[125495.578] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 15ms, your system is too slow
+[125768.266] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 11ms, your system is too slow
+[125776.003] (EE) event2  - AT Translated Set 2 keyboard: client bug: event processing lagging behind by 12ms, your system is too slow
+[128016.327] (EE) event2  - AT Translated Set 2 keyboard: client bug: event processing lagging behind by 11ms, your system is too slow
+[128047.102] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 13ms, your system is too slow
+[128784.533] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 12ms, your system is too slow
+[129162.483] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 19ms, your system is too slow
+[129207.130] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 11ms, your system is too slow
+[129671.404] (II) config/udev: removing device VirtualBox USB Tablet
+[129671.404] (**) Option "fd" "57"
+[129671.404] (II) event5  - VirtualBox USB Tablet: device removed
+[129671.406] (II) UnloadModule: "libinput"
+[129671.406] (II) systemd-logind: releasing fd for 13:69
+[129672.982] (II) config/udev: Adding input device VirtualBox USB Tablet (/dev/input/mouse1)
+[129672.983] (II) No input driver specified, ignoring this device.
+[129672.983] (II) This device may have been added with another device file.
+[129672.991] (II) config/udev: Adding input device VirtualBox USB Tablet (/dev/input/js0)
+[129672.991] (II) No input driver specified, ignoring this device.
+[129672.991] (II) This device may have been added with another device file.
+[129673.084] (II) config/udev: Adding input device VirtualBox USB Tablet (/dev/input/event5)
+[129673.084] (**) VirtualBox USB Tablet: Applying InputClass "libinput pointer catchall"
+[129673.084] (II) Using input driver 'libinput' for 'VirtualBox USB Tablet'
+[129673.141] (II) systemd-logind: got fd for /dev/input/event5 13:69 fd 40 paused 0
+[129673.141] (**) VirtualBox USB Tablet: always reports core events
+[129673.141] (**) Option "Device" "/dev/input/event5"
+[129673.141] (**) Option "_source" "server/udev"
+[129673.144] (II) event5  - VirtualBox USB Tablet: is tagged by udev as: Mouse
+[129673.144] (II) event5  - VirtualBox USB Tablet: device is a pointer
+[129673.144] (II) event5  - VirtualBox USB Tablet: device removed
+[129673.144] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:06.0/usb1/1-1/1-1:1.0/0003:80EE:0021.0007/input/input13/event5"
+[129673.144] (II) XINPUT: Adding extended input device "VirtualBox USB Tablet" (type: MOUSE, id 10)
+[129673.146] (**) Option "AccelerationScheme" "none"
+[129673.148] (**) VirtualBox USB Tablet: (accel) selected scheme none/0
+[129673.148] (**) VirtualBox USB Tablet: (accel) acceleration factor: 2.000
+[129673.148] (**) VirtualBox USB Tablet: (accel) acceleration threshold: 4
+[129673.150] (II) event5  - VirtualBox USB Tablet: is tagged by udev as: Mouse
+[129673.150] (II) event5  - VirtualBox USB Tablet: device is a pointer
+[141220.218] (EE) No surface to present from.
+[141223.491] (EE) No surface to present from.
+[141273.244] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 11ms, your system is too slow
+[141623.891] (EE) No surface to present from.
+[141672.142] (EE) No surface to present from.
+[141774.584] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 14ms, your system is too slow
+[142292.068] (EE) No surface to present from.
+[143044.044] (EE) event2  - AT Translated Set 2 keyboard: client bug: event processing lagging behind by 21ms, your system is too slow
+[143128.096] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 33ms, your system is too slow
+[143375.068] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 13ms, your system is too slow
+[143589.650] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 13ms, your system is too slow
+[143709.967] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 15ms, your system is too slow
+[144213.423] (EE) No surface to present from.
+[144266.343] (EE) event2  - AT Translated Set 2 keyboard: client bug: event processing lagging behind by 12ms, your system is too slow
+[144283.683] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 20ms, your system is too slow
+[144479.569] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 21ms, your system is too slow
+[144712.596] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 17ms, your system is too slow
+[144718.606] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 11ms, your system is too slow
+[144734.999] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 13ms, your system is too slow
+[144911.579] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 21ms, your system is too slow
+[145234.631] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 19ms, your system is too slow
+[146296.094] (EE) No surface to present from.
+[146337.197] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 12ms, your system is too slow
+[146377.288] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 14ms, your system is too slow
+[146494.270] (EE) event4  - ImExPS/2 Generic Explorer Mouse: client bug: event processing lagging behind by 13ms, your system is too slow
+[146494.270] (EE) client bug: timer event4 debounce short: scheduled expiry is in the past (-1ms), your system is too slow
+[146720.668] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 11ms, your system is too slow
+[147590.981] (EE) No surface to present from.
+[147909.263] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 12ms, your system is too slow
+[148371.085] (EE) No surface to present from.
+[148576.835] (EE) No surface to present from.
+[148690.463] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 11ms, your system is too slow
+[151550.288] (EE) No surface to present from.
+[151860.749] (EE) No surface to present from.
+[151879.786] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 11ms, your system is too slow
+[151935.655] (EE) No surface to present from.
+[152265.312] (EE) No surface to present from.
+[152283.594] (EE) No surface to present from.
+[152345.785] (EE) No surface to present from.
+[152653.460] (EE) No surface to present from.
+[152864.763] (EE) No surface to present from.
+[152999.320] (EE) event6  - VirtualBox mouse integration: client bug: event processing lagging behind by 13ms, your system is too slow
+[153675.758] (EE) No surface to present from.
+[154422.983] (EE) No surface to present from.

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<application-state>
+  <context id="">
+    <application id="org.gnome.FileRoller.desktop" score="3" last-seen="1634134545"/>
+    <application id="brave-browser.desktop" score="576" last-seen="1634574029"/>
+    <application id="google-chrome.desktop" score="10853.625" last-seen="1634572932"/>
+    <application id="guake.desktop" score="3521" last-seen="1634635328"/>
+    <application id="chromium_chromium.desktop" score="8077.25" last-seen="1634029466"/>
+    <application id="software-properties-gtk.desktop" score="2" last-seen="1634333429"/>
+    <application id="gnome-control-center.desktop" score="12" last-seen="1634337909"/>
+    <application id="gcr-prompter.desktop" score="191.5" last-seen="1634629780"/>
+    <application id="org.gnome.Nautilus.desktop" score="5" last-seen="1634568242"/>
+    <application id="update-manager.desktop" score="15" last-seen="1634333434"/>
+    <application id="org.gnome.seahorse.Application.desktop" score="9" last-seen="1634567233"/>
+    <application id="virtualbox.desktop" score="4" last-seen="1634567120"/>
+    <application id="org.gnome.Evolution-alarm-notify.desktop" score="20" last-seen="1634630509"/>
+    <application id="display-im6.q16.desktop" score="0" last-seen="1634567147"/>
+    <application id="code.desktop" score="21333.016127167215" last-seen="1634579727"/>
+    <application id="debian-xterm.desktop" score="0" last-seen="1634567133"/>
+  </context>
+</application-state>
