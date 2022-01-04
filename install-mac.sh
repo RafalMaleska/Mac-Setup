@@ -41,6 +41,7 @@ function add-ssh {
   eval `ssh-agent -s`
   su ${username}
   sudo touch ~/.ssh/known_hosts
+  sudo chmod 777 ~/.ssh/known_hosts
   sudo chown -v $USER ~/.ssh/known_hosts
 }
 
