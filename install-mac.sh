@@ -64,6 +64,9 @@ function basics {
   brew install jq
   brew install yq
   brew install htop
+  brew install pstree
+  brew install nmap
+  brew install unrar
   # Installing Cask for GUI Apps Install
   brew install cask
 
@@ -155,6 +158,7 @@ function dev-tools {
 
 
 function tools {
+  brew install --cask caffeine
   brew install --cask vlc
   brew install --cask google-chrome
   brew install --cask google-drive
@@ -171,6 +175,8 @@ function tools {
   #"Use `~/Downloads/Incomplete` to store incomplete downloads"
   defaults write org.m0k.transmission UseIncompleteDownloadFolder -bool true
   defaults write org.m0k.transmission IncompleteDownloadFolder -string "${HOME}/Downloads/Incomplete"
+  brew install --cask cyberduck
+  brew install --cask drawio
   brew install --cask slack
   brew install --cask zoom
   brew cleanup
