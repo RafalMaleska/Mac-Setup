@@ -125,8 +125,12 @@ function dev-tools {
   brew install --cask iterm2
   brew install --cask virtualbox
   brew install --cask virtualbox-extension-pack
+  brew install minikube
+  brew install k3d
 #  brew install --cask rancher
   brew install --cask docker
+# used for virtualization if virtualbox not present
+#  brew install hyperkit
   brew install --cask google-cloud-sdk
   brew install hugo
   brew install go
@@ -186,6 +190,12 @@ function tools {
   brew install --cask drawio
   brew install --cask slack
   brew install --cask zoom
+  brew install --cask microsoft-outlook
+  brew install --cask microsoft-teams
+  brew install --cask microsoft-powerpoint
+  brew install --cask microsoft-word
+  brew install --cask microsoft-excel
+  brew install --cask android-file-transfer
   brew cleanup
 }
 
