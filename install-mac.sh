@@ -155,6 +155,9 @@ function dev-tools {
   kubectl krew install neat
   kubectl krew install hns
   brew install --cask wireshark
+  brew install --cask postman
+  brew install --cask fork
+  brew install --cask sourcetree
   echo "Cleaning up brew"
   brew cleanup
 }
@@ -162,15 +165,16 @@ function dev-tools {
 
 function tools {
   brew install --cask caffeine
+  brew install --cask obs
   brew install --cask vlc
   brew install --cask google-chrome
   brew install --cask google-drive
   brew install --cask bartender
   brew install --cask cleanmymac
   brew install --cask licecap
-  brew install --cask sourcetree
   brew install --cask spotify
   brew install --cask transmission
+  brew install --cask alfred
   #"Hide the donate message"
   defaults write org.m0k.transmission WarningDonate -bool false
   #"Hide the legal disclaimer"
