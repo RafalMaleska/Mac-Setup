@@ -40,6 +40,8 @@ function add-ssh {
   chmod 666 /Users/${username}/.ssh/id_rsa.pub
   eval `ssh-agent -s`
   su ${username}
+  sudo touch ~/.ssh/known_hosts
+  sudo chown -v $USER ~/.ssh/known_hosts
 }
 
 
