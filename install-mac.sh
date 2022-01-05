@@ -2,6 +2,7 @@
 
 export repository=https://github.com/RafalMaleska/Mac-Setup
 export username=rafal
+export mackup-repo=https://github.com/RafalMaleska/dotfiles.git
 
 function essentials {
   echo "Installing xcode-stuff"
@@ -34,7 +35,7 @@ function add-ssh {
   sudo echo "ForwardAgent yes" >> ~/.ssh/config
   sudo echo "IdentityFile ~/.ssh/id_rsa_key" >> ~/.ssh/config
   sudo chmod 600 ~/.ssh/id_rsa.key
-  sudo ssh-add ~/.ssh/id_rsa.key
+  sudo ssh-add --apple-use-keychain ~/.ssh/id_rsa.key
   su -i
   ssh-keygen -y -f /Users/${username}/.ssh/id_rsa.key > /Users/${username}/.ssh/id_rsa.pub
   chmod 666 /Users/${username}/.ssh/id_rsa.pub
@@ -67,9 +68,13 @@ function basics {
   brew install jq
   brew install yq
   brew install htop
+  brew install grep
   brew install pstree
   brew install nmap
   brew install unrar
+  brew install ack
+  brew install httpie
+  brew install libyaml
   # Installing Cask for GUI Apps Install
   brew install cask
 
@@ -91,14 +96,15 @@ function shell {
   PATH="/usr/local/opt/gnu-getopt/bin:$PATH"
 
   sudo rm -rf ~/.zsh-suite
-  git clone https://github.com/RafalMaleska/shell.git ~/projects/VM-Setup/shell
-  ~/projects/VM-Setup/shell/install.zsh
+  git clone https://github.com/RafalMaleska/shell.git ~/projects/own/VM-Setup/shell
+  sudo cp ~/projects/own/VM-Setup/config/.bashrc ~/.bashrc
+  sudo cp ~/projects/own/VM-Setup/config/.gitconfig ~/.gitconfig
+  ~/projects/own/VM-Setup/shell/install.zsh
   git clone https://github.com/powerline/fonts.git
   ./fonts/install.sh
+  rm -rf fonts
   zsh
 
-  sudo cp ~/projects/VM-Setup/config/.bashrc ~/.bashrc
-  sudo cp ~/projects/VM-Setup/config/.gitconfig ~/.gitconfig
 }
 
 
@@ -196,7 +202,18 @@ function tools {
   brew install --cask microsoft-word
   brew install --cask microsoft-excel
   brew install --cask android-file-transfer
+  brew install --cask signal
+  brew install --cask cool-retro-term
   brew cleanup
+}
+
+
+function mackup {
+  brew install mackup
+  git clone $mackup_repo ~/projects/own/dotfiles
+  cp ~/projects/own/dotfiles/Mackup/.mackup.cfg ~/.mackup.cfg
+  mackup restore
+  mackup uninstall
 }
 
 
@@ -262,6 +279,7 @@ function main {
   shell
   dev-tools
   tools
+  mackup
   mac-setup
 }
 
