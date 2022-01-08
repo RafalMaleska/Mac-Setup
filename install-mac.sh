@@ -51,6 +51,8 @@ function basics {
   # Update homebrew recipes
   echo "Updating homebrew..."
   brew update
+  # allow apps from any source
+  sudo spctl --master-disable
   
   echo "Installing Git..."
   brew install git
@@ -128,6 +130,7 @@ function dev-tools {
   code --install-extension fabiospampinato.vscode-diff
   code --install-extension mads-hartmann.bash-ide-vscode
   code --install-extension rusnasonov.vscode-hugo
+  code --install-extension leodevbro.blockman  
   brew install --cask iterm2
   brew install --cask virtualbox
   brew install --cask virtualbox-extension-pack
@@ -204,6 +207,8 @@ function tools {
   brew install --cask android-file-transfer
   brew install --cask signal
   brew install --cask cool-retro-term
+  brew install --cask gimp
+  brew install --cask paintbrush
   brew cleanup
 }
 
