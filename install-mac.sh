@@ -2,7 +2,8 @@
 
 export repository=https://github.com/RafalMaleska/Mac-Setup
 export username=rafal
-export mackup-repo=https://github.com/RafalMaleska/dotfiles.git
+export MACKUP_REPO=git@github.com:RafalMaleska/dotfiles.git
+export SHELL_REPO=git@github.com:RafalMaleska/shell.git
 
 function essentials {
   echo "Installing xcode-stuff"
@@ -98,10 +99,8 @@ function shell {
   PATH="/usr/local/opt/gnu-getopt/bin:$PATH"
 
   sudo rm -rf ~/.zsh-suite
-  git clone https://github.com/RafalMaleska/shell.git ~/projects/own/VM-Setup/shell
-  sudo cp ~/projects/own/VM-Setup/config/.bashrc ~/.bashrc
-  sudo cp ~/projects/own/VM-Setup/config/.gitconfig ~/.gitconfig
-  ~/projects/own/VM-Setup/shell/install.zsh
+  git clone $SHELL_REPO ~/projects/own/shell
+  ~/projects/own/shell/install.zsh
   git clone https://github.com/powerline/fonts.git
   ./fonts/install.sh
   rm -rf fonts
@@ -215,7 +214,7 @@ function tools {
 
 function mackup {
   brew install mackup
-  git clone $mackup_repo ~/projects/own/dotfiles
+  git clone $MACKUP_REPO ~/projects/own/dotfiles
   cp ~/projects/own/dotfiles/Mackup/.mackup.cfg ~/.mackup.cfg
   mackup restore
   mackup uninstall
