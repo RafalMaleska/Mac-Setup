@@ -30,20 +30,30 @@ function add-user {
 # Important: copy SSH Key into ~/.ssh before
 function add-ssh {
   sudo mkdir -p /Users/$username/.ssh
-  sudo chmod 0700 $HOME/.ssh
   sudo touch ~/.ssh/config
-  sudo chmod 666 ~/.ssh/config
+  sudo chmod 600 ~/.ssh/config
   sudo echo "ForwardAgent yes" >> ~/.ssh/config
   sudo echo "IdentityFile ~/.ssh/id_rsa_key" >> ~/.ssh/config
-  sudo chmod 600 ~/.ssh/id_rsa.key
-  sudo ssh-add --apple-use-keychain ~/.ssh/id_rsa.key
+  # Check for path
+  export SSH_DIR=~/.ssh/
+  if [ -z "$1" ]; then
+     echo "Please provide the path to the ssh key id_rsa_key" 
+     exit 1
+  fi
+
+  cp $1 $SSH_DIR
+  chmod 600 $SSH_DIR$(basename $1)
+  echo "Copied ${1} to .ssh dir and set permissions to 600"
+  #
+  sudo chmod 600 ~/$SSH_DIR/id_rsa.key
+  sudo ssh-add --apple-use-keychain ~/$SSH_DIR/id_rsa.key
   su -i
-  ssh-keygen -y -f /Users/${username}/.ssh/id_rsa.key > /Users/${username}/.ssh/id_rsa.pub
-  chmod 666 /Users/${username}/.ssh/id_rsa.pub
+  ssh-keygen -y -f /Users/${username}/$SSH_DIR/id_rsa.key > /Users/${username}/$SSH_DIR/id_rsa.pub
+  chmod 600 /Users/${username}/$SSH_DIR/id_rsa.pub
   eval `ssh-agent -s`
   su ${username}
   sudo touch ~/.ssh/known_hosts
-  sudo chmod 777 ~/.ssh/known_hosts
+  sudo chmod 600 ~/.ssh/known_hosts
   sudo chown -v $USER ~/.ssh/known_hosts
 }
 
