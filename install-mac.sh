@@ -88,6 +88,7 @@ function basics {
   brew install ack
   brew install httpie
   brew install libyaml
+  brew install watch
   # Installing Cask for GUI Apps Install
   brew install cask
 
@@ -158,6 +159,7 @@ function dev-tools {
   brew install docker
   brew install minikube
   brew install kubectl
+  brew install istioctl
   brew install skaffold
   brew install kind
   brew install helm
