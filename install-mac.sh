@@ -193,7 +193,7 @@ function tools {
   brew install --cask vlc
   brew install --cask google-chrome
   brew install --cask google-drive
-  brew install --cask bartender
+  brew install --cask dozer
   brew install --cask cleanmymac
   brew install --cask licecap
   brew install --cask spotify
