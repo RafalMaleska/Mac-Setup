@@ -168,6 +168,7 @@ function dev-tools {
   brew install kustomize
   brew install argocd
   brew install kubebuilder
+  brew install kubeseal
   brew install k9s
   brew install krew
   kubectl krew install get-all
@@ -220,6 +221,7 @@ function tools {
   brew install --cask cool-retro-term
   brew install --cask gimp
   brew install --cask paintbrush
+  brew install --cask keka
   brew cleanup
 }
 
