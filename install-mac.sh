@@ -170,6 +170,8 @@ function dev-tools {
   brew install kubebuilder
   brew install kubeseal
   brew install k9s
+  brew tap GoogleContainerTools/kpt https://github.com/GoogleContainerTools/kpt.git
+  brew install kpt
   brew install krew
   kubectl krew install get-all
   kubectl krew install score
