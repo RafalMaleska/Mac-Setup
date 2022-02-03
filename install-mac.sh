@@ -200,8 +200,8 @@ function tools {
   brew install --cask cleanmymac
   brew install --cask licecap
   brew install --cask spotify
-  brew install --cask transmission
   brew install --cask alfred
+  brew install --cask transmission
   #"Hide the donate message"
   defaults write org.m0k.transmission WarningDonate -bool false
   #"Hide the legal disclaimer"
@@ -227,6 +227,14 @@ function tools {
   brew cleanup
 }
 
+
+function non-brew {
+KFILT_NAME=kfilt
+cd
+wget  -O $KFILT_NAME -q https://github.com/ryane/kfilt/releases/download/v0.0.6/kfilt_0.0.6_darwin_all
+chmod 777 $KFILT_NAME
+mv $KFILT_NAME /usr/local/bin/
+}
 
 function mackup {
   brew install mackup
@@ -299,6 +307,7 @@ function main {
   shell
   dev-tools
   tools
+  non-brew
   mackup
   mac-setup
 }
