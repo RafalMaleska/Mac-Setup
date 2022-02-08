@@ -151,9 +151,11 @@ function dev-tools {
 # used for virtualization if virtualbox not present
 #  brew install hyperkit
   brew install --cask google-cloud-sdk
+  brew install terraform
   brew install hugo
   brew install go
   brew install awscli
+  brew install eksctl
   brew install shellcheck
   brew install python3 pipenv
   brew install docker
