@@ -161,6 +161,7 @@ function dev-tools {
   brew install docker
   brew install minikube
   brew install kubectl
+  brew install stern
   brew install istioctl
   brew install skaffold
   brew install kind
@@ -183,6 +184,7 @@ function dev-tools {
   kubectl krew install view-secret
   kubectl krew install neat
   kubectl krew install hns
+  brew install ngrok
   brew install --cask wireshark
   brew install --cask postman
   brew install --cask fork
