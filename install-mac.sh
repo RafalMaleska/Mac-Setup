@@ -173,6 +173,11 @@ function dev-tools {
   brew install kubebuilder
   brew install kubeseal
   brew install k9s
+  brew tap vmware-tanzu/carvel
+  brew install vendir
+  brew install skopeo
+  brew install velero
+  brew install minio-mc
   brew tap GoogleContainerTools/kpt https://github.com/GoogleContainerTools/kpt.git
   brew install kpt
   brew install krew
