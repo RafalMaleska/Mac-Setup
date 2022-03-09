@@ -144,12 +144,13 @@ function dev-tools {
   brew install --cask iterm2
   brew install --cask virtualbox
   brew install --cask virtualbox-extension-pack
-  brew install minikube
   brew install k3d
-#  brew install --cask rancher
-  brew install --cask docker
+#  brew install --cask docker
 # used for virtualization if virtualbox not present
-#  brew install hyperkit
+  brew install --cask rancher
+  brew install hyperkit
+  brew install docker
+  brew install minikube
   brew install --cask google-cloud-sdk
   brew install terraform
   brew install hugo
@@ -158,7 +159,6 @@ function dev-tools {
   brew install eksctl
   brew install shellcheck
   brew install python3 pipenv
-  brew install docker
   brew install minikube
   brew install kubectl
   brew install stern
