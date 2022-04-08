@@ -243,6 +243,8 @@ cd
 wget  -O $KFILT_NAME -q https://github.com/ryane/kfilt/releases/download/v0.0.6/kfilt_0.0.6_darwin_all
 chmod 777 $KFILT_NAME
 mv $KFILT_NAME /usr/local/bin/
+# Mizu - API traffic viewer for Kubernetes
+curl -Lo mizu github.com/up9inc/mizu/releases/latest/download/mizu_darwin_amd64 && chmod 755 mizu && mv mizu /usr/local/bin/
 }
 
 function mackup {
