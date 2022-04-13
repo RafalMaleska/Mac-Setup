@@ -181,6 +181,8 @@ function dev-tools {
   brew tap GoogleContainerTools/kpt https://github.com/GoogleContainerTools/kpt.git
   brew install kpt
   brew install krew
+  kubectl krew install cert-manager
+  kubectl krew install spy  
   kubectl krew install get-all
   kubectl krew install score
   kubectl krew install sniff
