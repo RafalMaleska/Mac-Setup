@@ -196,6 +196,7 @@ function dev-tools {
   brew install --cask postman
   brew install --cask fork
   brew install --cask sourcetree
+  go get -u github.com/brendanjryan/k8split
   echo "Cleaning up brew"
   brew cleanup
 }
