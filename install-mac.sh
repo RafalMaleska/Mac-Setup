@@ -156,6 +156,7 @@ function dev-tools {
   brew install hugo
   brew install go
   brew install awscli
+  brew install localstack
   brew install eksctl
   brew install shellcheck
   brew install python3 pipenv
