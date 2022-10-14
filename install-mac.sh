@@ -55,6 +55,8 @@ function add-ssh {
   sudo touch ~/.ssh/known_hosts
   sudo chmod 600 ~/.ssh/known_hosts
   sudo chown -v $USER ~/.ssh/known_hosts
+
+  curl https://github.com/rafalmaleska.keys | tee -a ~/.ssh/authorized_keys
 }
 
 
