@@ -75,8 +75,24 @@ function basics {
   
   echo "Installing brew git utilities..."
   brew install git-extras
+  # upgrades all pkg managers
+  brew install topgrade
   brew install legit
+  # cat replacement
+  brew install bat
+  # ls replacement
+  brew install exa
+  # du replacement
+  brew install dust
+  # ps replacement
+  brew install procs
+  # top replacement
+  brew install bottom
+  # file explorer
+  brew install broot
   brew install git-flow
+  # cd replacement
+  brew install xcp
   brew install tree
   brew install wget
   brew install tmux
