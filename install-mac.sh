@@ -163,6 +163,7 @@ function dev-tools {
   brew install --cask virtualbox
   brew install --cask virtualbox-extension-pack
   brew install k3d
+  brew install devspace
 #  brew install --cask docker
 # used for virtualization if virtualbox not present
   brew install --cask rancher
