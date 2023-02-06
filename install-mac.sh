@@ -185,6 +185,8 @@ function dev-tools {
   brew install istioctl
   brew install skaffold
   brew install kind
+  # tool to create charts from manifests
+  brew install arttor/tap/helmify
   brew install helm
   helm plugin install https://github.com/chartmuseum/helm-push
   brew install helmfile
