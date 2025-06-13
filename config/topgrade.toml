@@ -1,0 +1,81 @@
+# ~/.config/topgrade.toml
+
+[include]
+# Uncomment and add paths if you want to include additional config files
+# paths = ["/etc/topgrade.toml"]
+
+[misc]
+# Run `sudo -v` at the start to cache credentials
+pre_sudo = false
+
+# Don't ask for confirmations; run everything automatically
+assume_yes = true
+
+# Clean up temporary/old files after upgrading
+cleanup = true
+
+# Don't retry failed steps
+no_retry = true
+
+# Skip notification at the end of a run
+skip_notify = true
+
+# Don't let Topgrade self-update (let Homebrew manage it)
+no_self_update = true
+
+# Ignore failures for specific steps (e.g., powershell, if not used)
+ignore_failures = ["powershell"]
+
+# Disable specific steps - same options as the command line flag
+disable = ["pnpm"]
+
+# Display time in step titles
+display_time = true
+
+# Run inside tmux (if you want upgrades to persist in a tmux session)
+# run_in_tmux = true
+
+# List of remote machines to run Topgrade on (if you manage multiple computers)
+# remote_topgrades = ["myserver", "workstation"]
+
+# Path to Topgrade on remote machines
+# remote_topgrade_path = ".cargo/bin/topgrade"
+
+# Arguments to pass to SSH for remote upgrades
+# ssh_arguments = "-o ConnectTimeout=2"
+
+# Arguments to pass tmux when pulling repositories
+# tmux_arguments = "-S /var/tmux.sock"
+
+[python]
+# Use pipupgrade for Python packages
+enable_pipupgrade = true
+
+[brew]
+# Uncomment to autoremove unused dependencies after upgrade
+# autoremove = true
+
+# Uncomment for more aggressive cask upgrades
+# greedy_cask = true
+
+[git]
+# Uncomment to specify repositories to pull/push
+# repos = [
+#   "~/src/*/",
+#   "~/.config/something"
+# ]
+
+[commands]
+# Custom commands to run during the upgrade process.
+# "Update Kubernetes tools" = "kubectl krew upgrade && kustomize update"
+# "Update VSCode extensions" = "code --install-extension ms-python.python --force"
+
+[pre_commands]
+# Commands to run before anything else
+# "Backup dotfiles" = "mackup backup"
+
+[post_commands]
+# Commands to run after everything else
+# "Notify completion" = "osascript -e 'display notification \"Topgrade finished!\" with title \"Upgrade Complete\"'"
+
+
